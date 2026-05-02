@@ -9,3 +9,4 @@ defmodule MiniDiscord.MixProject do
     [mod: {MiniDiscord, []}, extra_applications: [:logger]]
   end
 end
+
