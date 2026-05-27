@@ -21,3 +21,6 @@ R2-4. Oui, le salon redémarre si son superviseur utilise une stratégie et une 
 R2-5. Avec :one_for_one, seul le processus qui plante est redémarré. Avec :one_for_all, si un processus plante, tous les processus enfants du superviseur sont arrêtés puis redémarrés ensemble. :one_for_one est moins radical et préserve les autres services, tandis que :one_for_all redémarre tout pour garantir une cohérence totale.
 
 
+Chiffrement AES-256-CTR : le handler déchiffre les paquets entrants, valide le texte en clair, diffuse/stocke en clair et chiffre les envois par client via `@key`, `encrypt/1` et `decrypt/1` (clé codée en dur pour la démo — externaliser en production).(aide d'ia pour faire les handlers et l'implementation du chiffrement)
+
+

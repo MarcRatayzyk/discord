@@ -1,0 +1,9 @@
+{application,mini_discord,
+             [{applications,[kernel,stdlib,elixir,logger,crypto]},
+              {description,"mini_discord"},
+              {modules,['Elixir.MiniDiscord','Elixir.MiniDiscord.ChatServer',
+                        'Elixir.MiniDiscord.ClientHandler',
+                        'Elixir.MiniDiscord.Salon']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.MiniDiscord',[]}}]}.

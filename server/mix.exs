@@ -6,7 +6,6 @@ defmodule MiniDiscord.MixProject do
   end
 
   def application do
-    [mod: {MiniDiscord, []}, extra_applications: [:logger]]
+    [mod: {MiniDiscord, []}, extra_applications: [:logger, :crypto]]
   end
 end
-
